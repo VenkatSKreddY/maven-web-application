@@ -12,8 +12,8 @@
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Mithun Technologies</name>
-		<url>http://mithuntechnologies.com/</url>
+		<name>URL Technologies</name>
+		<url>http://urltechnologies.in/</url>
 	</organization>
 
 	<properties>
@@ -97,14 +97,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Autocon Releases Repository</name>
-	      <url>http://192.168.122.159:9091/autocon/repository/autocon-releases/</url>
+	      <name>GrowWings Releases Repository</name>
+	      <url>http://192.168.42.142:8081/repository/URL_Maven_Release_Dev/</url>
 	    </repository>
 	    
   	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Autocon Snapshot Repository</name>
-	      <url>http://192.168.122.159:9091/autocon/repository/autocon-snapshots/</url>
+	      <name>GrowWings Snapshot Repository</name>
+	      <url>http://192.168.42.142:8081/repository/URL_Maven_Snapshots_Dev/</url>
 	    </snapshotRepository>	    
 	</distributionManagement>
 	
