@@ -1,0 +1,36 @@
+trigger:
+  - master
+
+pool: default
+
+
+stages:
+  - stage: Build
+    displayName: "Build Stage Test"
+    jobs:
+      - job: BuildJob
+        displayName: "Build Job"
+        steps:
+          - task: Maven@4
+            displayName: "Build Step"
+            inputs:
+              mavenPomFile: "pom.xml"
+              goals: "package"
+
+  - stage: Test
+    displayName: "Testing Stage"
+    jobs:
+      - job: TesingJob
+        displayName: "Running Unit Test Cases"
+        steps:
+          - script: echo "Running Unit Test Cases"
+            displayName: TestStep
+
+  - stage: Deploy
+    displayName: "Deploying The Application"
+    jobs:
+      - job: DeployJob
+        displayName: "Deploying The Application"
+        steps:
+          - script: echo "Deploying The Application"
+            displayName: "Deploying The Appliaction"
